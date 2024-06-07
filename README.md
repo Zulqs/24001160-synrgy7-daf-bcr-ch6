@@ -12,42 +12,59 @@ Chapter 6 Binar Car Rental API
 8. Run server `npm run dev`
 10. Access http://localhost:3000/api-docs/ for API Docs
 
-# CRUD Cars (only Superadmin & Admin)
+# Authentication
+## Regist a New User
+`GET /api/auth/register`
+
+## User Login
+`GET /api/auth/login`
+
+## Get Current User
+`GET /api/auth/whoami`
+
+# CRUD Users
+## Get Users
+`GET /api/users`
+
+## Create New User
+`GET /api/users/create`
+
+## Get Users by Email
+`GET /api/users/email`
+
+## Update User
+`GET /api/users/update/{id}`
+
+## Delete User
+`GET /api/users/delete/{id}`
+
+# CRUD Cars
 ## Get Cars
-### Request
 `GET /api/cars`
 
 ## Get Cars Available
-### Request
 `GET /api/cars/available`
 
 ## Create Cars
-### Request
 `GET /api/cars/create`
 
 ## Update Cars
-### Request
 `GET /api/cars/update/:id`
 
 ## Delete Cars
-### Request
 `GET /api/cars/delete/:id`
 
-# GET Logs (only Superadmin & Admin)
+# GET Logs
 ## Get All Logs
-### Request
 `GET /api/logs`
 
 ## Get Insert Logs
-### Request
 `GET /api/logs/insert`
 
 ## Get Update Logs
-### Request
 `GET /api/logs/update`
 
 ## Get Delete Logs
-### Request
 `GET /api/logs/delete`
 
 ## ERD
